@@ -47,4 +47,4 @@ function copyPassClipboard() {
     alert('Copied to clipboard.');
 }
 
-clipboard.addEventListener('click', copyPass);
+clipboard.addEventListener('click', copyPassClipboard);
