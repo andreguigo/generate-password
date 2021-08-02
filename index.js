@@ -31,8 +31,7 @@ function generatePassword() {
 
 generate.addEventListener('click', generatePassword);
 
-// copy password for clipboard
-function copyPass() {
+function copyPassClipboard() {
     let copy = result.innerText
     
     if(!copy) 
