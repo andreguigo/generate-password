@@ -11,7 +11,9 @@ function generateCode() {
     let symbols = '!@#$%&*(){}[]=<>/,.';
     let sym = symbols[Math.floor(Math.random() * symbols.length)];
 
-    return `${low}${upp}${sym}${num}`;
+    let mix = `${low}${upp}${num}${sym}`;
+
+    return mix[Math.floor(Math.random() * mix.length)];
 }
 
 function generatePassword() {
