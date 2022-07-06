@@ -1,7 +1,5 @@
 # :key: Gerador de Senhas
 
-### A simples aplicação gera senhas seguras de até 12 caracteres.
+### Geração de senhas de forma simples e segura.
 
-O aplicativo faz parte do desenvolvimento de mini projetos pessoais.
-
-[Gerador de Senhas](https://andreguigo.github.io/generate-password_js)
+O código é um exemplo básico de geração de senhas simples e segura de até 12 caracteres.

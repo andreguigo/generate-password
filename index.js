@@ -1,13 +1,25 @@
-let passsize    = document.getElementById('passsize');
-let generate    = document.getElementById('generate');
-let result      = document.getElementById('result');
-let clipboard   = document.getElementById('clipboard');
+/* **
+It is necessary to create fields for input and output of data
+Html example:
+    <p> Enter the number of characters: </p> 
+    <input type="number" id="passsize" min="1" max="12" size="5" value="12">
+    <button id="generate"> Generate! </button>
+
+    <p id="result"> </p>
+    <button id="clipboard"> Copy password clipboard! </button>
+
+    <script src="index.js"></script>
+** */
+let passsize = document.getElementById('passsize');
+let generate = document.getElementById('generate');
+let result = document.getElementById('result');
+let clipboard = document.getElementById('clipboard');
 
 function generateCode() {
     let low = String.fromCharCode(Math.floor(Math.random() * 26) + 97);
     let upp = String.fromCharCode(Math.floor(Math.random() * 26) + 65);
     let num = String.fromCharCode(Math.floor(Math.random() * 10) + 48);
-    
+
     let symbols = '!@#$%&*(){}[]=<>/,.';
     let sym = symbols[Math.floor(Math.random() * symbols.length)];
 
@@ -24,7 +36,7 @@ function generatePassword() {
         if (passsize.value > 12)
             return;
 
-        final+= generateCode();
+        final += generateCode();
         x++;
     }
 
@@ -35,8 +47,8 @@ generate.addEventListener('click', generatePassword);
 
 function copyPassClipboard() {
     let copy = result.innerText
-    
-    if(!copy) 
+
+    if (!copy)
         return;
 
     let textarea = document.createElement('textarea');
@@ -45,7 +57,7 @@ function copyPassClipboard() {
     textarea.select();
     document.execCommand('copy');
     textarea.remove();
-    
+
     alert('Copied to clipboard.');
 }
 
