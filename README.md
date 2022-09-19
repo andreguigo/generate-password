@@ -2,4 +2,4 @@
 
 ### Geração de senhas de forma simples e segura.
 
-O código é um exemplo básico de geração de senhas simples e segura de até 12 caracteres.
+O código é um exemplo básico de geração de senhas simples e segura.
