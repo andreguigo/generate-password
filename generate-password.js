@@ -1,5 +1,4 @@
 const generatePassword = scalingCode();
-const copyClipboard = copyCode();
 
 function mixCode() {
     let low = String.fromCharCode(Math.floor(Math.random() * 26) + 97);
@@ -25,6 +24,8 @@ function scalingCode() {
 
 // *** bonus *** 
 // copy the generated code to clipboard 
+const copyClipboard = copyCode();
+
 function copyCode() {
     let copy = generatePassword;
     if (!copy)
